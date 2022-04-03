@@ -16,8 +16,7 @@
 
 
 #create a function
-# name = 'Packers'
-# print(f'{name[0] + name[6]}')  
+# name = 'Packers'# print(f'{name[0] + name[6]}')  
 
 # variable = str
 
@@ -100,21 +99,48 @@
 
 
 # singleparam(word)
-
-
-word = "W,o,r,l,d P,e,a,c,e"
-
-def singleparam(word):
-    final_result = []
-    for x in word:
-        final_result.append(x)
-    for x in final_result.index(x):
-        final_result.append(x)
-        print(final_result)
-
-singleparam(word)        
+# I will come back to the one above
+# Maybe we try following instruction and using .append(in a wiser way)
+#       
 # a.	Inside the function, create a variable called “final_result” and set it equal to an empty string.
 # b.	Loop over the letters in the word and append the letter and its index to the final_result variable.
 # c.	Print to the terminal the final_result variable.
 # d.	Example Input: “World Peace” 
 # e.	Example Output: “W0o1r2l3d4 5P6e7a8c9e10”
+
+word = ['R','o','g','e','r','T','h','a','d',]
+
+def singleParam(word):
+    final_result = ['', ]
+    for x in word:
+        if 'R' in x:
+            final_result.append(x)
+            final_result.append(1)
+        elif 'o' in x:
+            final_result.append(x)
+            final_result.append(2)
+        elif 'g' in x:
+            final_result.append(x)
+            final_result.append(3)
+        elif 'e' in x:
+            final_result.append(x)
+            final_result.append(4)
+        elif 'r' in x:
+            final_result.append(x)
+            final_result.append(2) 
+        elif 'T' in x:
+            final_result.append(x)
+            final_result.append(6)
+        elif 'h' in x:
+            final_result.append(x)
+            final_result.append(7)
+        elif 'a' in x:
+            final_result.append(x)
+            final_result.append(8)
+        elif 'd' in x:
+            final_result.append(x)
+            final_result.append(9)
+    else:        
+        print(final_result)   
+
+singleParam(word)
