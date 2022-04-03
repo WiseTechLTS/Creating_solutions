@@ -62,46 +62,57 @@
 
 # 3. Write a function that takes in a single parameter called “word”. This parameter will be a string.
 
-word = ("World Peace")
+# word = "W,o,r,l,d P,e,a,c,e"
+
+# def singleparam(word):
+#     final_result = []
+#     for x in word:
+#         if "W" in x:
+#             final_result.append(x)
+#             continue 
+#         elif "o" in x: 
+#             final_result.append(x)
+#             continue
+#         elif "r" in x: 
+#             final_result.append(x)
+#         elif "l" in x: 
+#             final_result.append(x)
+#             continue 
+#         elif "d" in x: 
+#             final_result.append(x)
+#             continue
+#         elif "P" in x: 
+#             final_result.append(x)
+#             continue
+#         elif "e" in x: 
+#             final_result.append(x)
+#             continue
+#         elif "a" in x: 
+#             final_result.append(x)
+#             continue
+#         elif "c" in x: 
+#             final_result.append(x)
+#             continue    
+#         elif "e" in x: 
+#             final_result.append(x)
+#     else:
+#         print(final_result)
+
+
+# singleparam(word)
+
+
+word = "W,o,r,l,d P,e,a,c,e"
 
 def singleparam(word):
     final_result = []
     for x in word:
-        if "W0" in x:
-            final_result.append(x)
-            continue 
-        elif "o" in x: 
-            final_result.append(x)
-            continue
-        elif "r" in x: 
-            final_result.append(x) 
-            continue
-        elif "l" in x: 
-            final_result.append(x)
-            continue 
-        elif "d" in x: 
-            final_result.append(x)
-            continue
-        elif "P" in x: 
-            final_result.append(x)
-            continue
-        elif "e" in x: 
-            final_result.append(x)
-            continue
-        elif "a" in x: 
-            final_result.append(x)
-            continue
-        elif "c" in x: 
-            final_result.append(x)
-            continue    
-        elif "e" in x: 
-            final_result.append(x)
-    else:
+        final_result.append(x)
+    for x in final_result.index(x):
+        final_result.append(x)
         print(final_result)
 
-
-singleparam(word)
-
+singleparam(word)        
 # a.	Inside the function, create a variable called “final_result” and set it equal to an empty string.
 # b.	Loop over the letters in the word and append the letter and its index to the final_result variable.
 # c.	Print to the terminal the final_result variable.
