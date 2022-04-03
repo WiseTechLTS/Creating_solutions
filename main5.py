@@ -97,7 +97,83 @@
 #     else:
 #         print(final_result)
 
+# word = "Peace"
 
+# def singleparam(word):
+#     final_result = str('')
+#     for x in word:
+#         if "P" in x: 
+#             final_result.append(x)
+#             final_result.append(1)
+#             continue
+#         elif "e" in x: 
+#             final_result.append(x)
+#             final_result.append(2)
+#             continue
+#         elif "a" in x: 
+#             final_result.append(x)
+#             final_result.append(3)
+#             continue
+#         elif "c" in x: 
+#             final_result.append(x)
+#             final_result.append(4)
+#             continue    
+#         elif "e" in x: 
+#             final_result.append(x)
+#             final_result.append(5)
+#     else:
+#         print(final_result)
+
+
+
+
+#  def singleParam(word):
+#     final_result = 1j
+#     for x in word:
+#         if 'R' in x:
+#             final_result.append[x]
+#             final_result.append(0)
+#             continue
+#         elif 'o' in word:
+#             final_result.append(x)
+#             final_result.append(1)
+#             continue
+#         elif 'g' in word:
+#             final_result.append(x)
+#             final_result.append(2)
+#             continue
+#         elif 'e' in word:
+#             final_result.append(x)
+#             final_result.append(3)
+#             continue
+#         elif 'r' in word:
+#             final_result.append(x)
+#             final_result.append(4)
+#             continue 
+#         elif 'T' in word:
+#             final_result.append(x)
+#             final_result.append(5)
+#             continue       
+#         elif 'h' in word:
+#             final_result.append(x)
+#             final_result.append(5)
+#             continue   
+#         elif 'a' in word:
+#             final_result.append(x)
+#             final_result.append(7)
+#         elif 'd' in word:
+#             final_result.append(x)
+#             final_result.append(8)
+#     else:
+#             final_result.append(x)
+#             final_result.append(9)
+#             print(final_result) 
+
+# word = 'Roger Thad'
+
+# singleParam(word)
+
+# singleparam(word)
 # singleparam(word)
 # I will come back to the one above
 # Maybe we try following instruction and using .append(in a wiser way)
@@ -108,39 +184,28 @@
 # d.	Example Input: “World Peace” 
 # e.	Example Output: “W0o1r2l3d4 5P6e7a8c9e10”
 
-word = ['R','o','g','e','r','T','h','a','d',]
+# 4.	Write a function that takes in a single parameter called “ingredients”. This parameter will be a List.
+# a.	Inside of the function, take user input that asks if the user knows what ingredient they want to search for
+# b.	Check the List parameter and see if the user’s input is an element in the List.
+# i.	If the ingredient is present, return the string ingredient from the function
+# ii.	If the ingredient is not there, ask the user if they want to search again and restart the operation
 
-def singleParam(word):
-    final_result = ['', ]
-    for x in word:
-        if 'R' in x:
-            final_result.append(x)
-            final_result.append(1)
-        elif 'o' in x:
-            final_result.append(x)
-            final_result.append(2)
-        elif 'g' in x:
-            final_result.append(x)
-            final_result.append(3)
-        elif 'e' in x:
-            final_result.append(x)
-            final_result.append(4)
-        elif 'r' in x:
-            final_result.append(x)
-            final_result.append(2) 
-        elif 'T' in x:
-            final_result.append(x)
-            final_result.append(6)
-        elif 'h' in x:
-            final_result.append(x)
-            final_result.append(7)
-        elif 'a' in x:
-            final_result.append(x)
-            final_result.append(8)
-        elif 'd' in x:
-            final_result.append(x)
-            final_result.append(9)
-    else:        
-        print(final_result)   
+#write function def
 
-singleParam(word)
+ingredients = []
+
+def ingredFunction(ingredients):
+    user_choice = input('Do you know what ingredient you need?    ')
+    if user_choice in ingredients:
+        return ingredients
+    else: 
+        print(f'We dont have that.')
+    user_check = input('Wpuld you like to choose again?  ')
+    if user_choice in ingredients:
+        return ingredients
+    else:
+        print('Thank you')
+
+ingredients = ['cheese','ketchup','potato']
+
+ingredFunction(ingredients)
