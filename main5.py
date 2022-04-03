@@ -192,20 +192,40 @@
 
 #write function def
 
-ingredients = []
+# ingredients = []
 
-def ingredFunction(ingredients):
-    user_choice = input('Do you know what ingredient you need?    ')
-    if user_choice in ingredients:
-        return ingredients
-    else: 
-        print(f'We dont have that.')
-    user_check = input('Wpuld you like to choose again?  ')
-    if user_choice in ingredients:
-        return ingredients
-    else:
-        print('Thank you')
+# def ingredFunction(ingredients):
+#     user_choice = input('Do you know what ingredient you need?    ')
+#     if user_choice in ingredients:
+#         return ingredients
+#     else: 
+#         print(f'We dont have that.')
+#     user_check = input('Wpuld you like to choose again?  ')
+#     if user_choice in ingredients:
+#         return ingredients
+#     else:
+#         print('Thank you')
 
-ingredients = ['cheese','ketchup','potato']
+# ingredients = ['cheese','ketchup','potato']
 
-ingredFunction(ingredients)
+# ingredFunction(ingredients)
+
+
+
+# 5.	Write a function that takes in a list of strings, the logic of the function should reverse the order of the values inside the list then return it back as a new list
+# a.	Note: Cannot use list.reverse() for this problem
+# i.	Input: [“Yellow”, “Purple”, “Orange”]
+# ii.	Output: [“Orange”, “Purple”, “Yellow”]
+
+strings1 = ['Yellow', 'Purple', 'Orange']
+
+def myfunction(string1):
+    x,y,z = string1
+    string1 = [x,y,z]
+    print(f'{([z,y,x])}')
+    return string1
+
+strings1 = ['Yellow', 'Purple', 'Orange']
+
+myfunction(strings1)    
+
