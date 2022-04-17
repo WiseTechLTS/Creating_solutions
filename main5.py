@@ -15,16 +15,16 @@
 
 
 
-#create a function
+# #create a function
 # name = 'Packers'# print(f'{name[0] + name[6]}')  
 
 # variable = str
 
-# def printFirstLast(variable):
-#         x = print(f'{variable[0] + variable[6]}')
+# def printFirstLast(name):
+#         x = print(f'{name[0] + name[6]}')
 #         return x 
-#     #We can name the variable type so that it is constant 
-#     #When we call the function  
+# #     #We can name the variable type so that it is constant 
+# #     #When we call the function  
 # printFirstLast('Packers')
 # #take in a string
 # #take the first and last charachter of the string
@@ -33,18 +33,20 @@
 # # 2.	Peanut Butter Jelly
 
 # #define the range of numbers 
+# range1 = range(0,101,1)
 
 # def num_printer(range1):#a.
-#     for num in range1: 
+#     for num in range(0,101,1): 
 #         if num % 15 == 0: 
 #             print('peanut butter jelly') #d. Had to list first, is this because???? If a number is divisible by 3 and 5, print ‘peanut butter jelly’ instead of the number
+#             continue       
 #         elif num % 5 == 0: 
 #             print('jelly') #c. If a number is divisible by 5, print ‘jelly’ instead of the number
+#             continue       
 #         elif num % 3 == 0: 
 #             print('peanut butter') #b. If a number is divisible by 3, print 'peanut butter’ instead of the number
-#         return num #a.	Write a function that prints every number from 0 to 100 to the console
+#             continue #a.	Write a function that prints every number from 0 to 100 to the console
 
-# range1 = range(100)
 # num_printer(range1)
 
 #We can also create a function and define the variable as a number then introduce the range inside the function
@@ -183,6 +185,15 @@
 # c.	Print to the terminal the final_result variable.
 # d.	Example Input: “World Peace” 
 # e.	Example Output: “W0o1r2l3d4 5P6e7a8c9e10”
+# word = ["Tonight Tonight"]
+
+
+# final_result = ['']
+# for letters in word:
+#     if 'T' in letters:
+#         final_result.append[0]
+#         print(final_result)
+#     else:
 
 # 4.	Write a function that takes in a single parameter called “ingredients”. This parameter will be a List.
 # a.	Inside of the function, take user input that asks if the user knows what ingredient they want to search for
@@ -217,15 +228,42 @@
 # i.	Input: [“Yellow”, “Purple”, “Orange”]
 # ii.	Output: [“Orange”, “Purple”, “Yellow”]
 
-strings1 = ['Yellow', 'Purple', 'Orange']
+# strings1 = ['Yellow', 'Purple', 'Orange']
 
-def myfunction(string1):
-    x,y,z = string1
-    string1 = [x,y,z]
-    print(f'{([z,y,x])}')
-    return string1
+# def myfunction(string1):
+#     x,y,z = string1
+#     string1 = [x,y,z]
+#     print(f'{([z,y,x])}')
+#     return string1
 
-strings1 = ['Yellow', 'Purple', 'Orange']
+# strings1 = ['Yellow', 'Purple', 'Orange']
 
-myfunction(strings1)    
+# myfunction(strings1)    
 
+# 6.	Write a function that takes in a single parameter called ‘names’. 
+# a.	When you call the function, pass in a list containing 6 different names. 
+# b.	The function should create and return a new list filled with any name from the ‘names’ parameter that contains more than 4 characters.
+# c.	Ex Input: [‘Rebecca’, ‘Sam’, ‘Bob’, ‘Dante’, ‘Monica’, ‘Brad’]
+# d.	Ex Output: [‘Rebecca’, ‘Dante’, ‘Monica’]
+
+
+# def namelistfunction(names):
+#     list_ofnames = []
+#     x = int
+#     y = str 
+#     for y in names:
+#         list_ofnames.append(0)
+#         list_ofnames.append(1)
+#         list_ofnames.append(2)
+#         list_ofnames.append(3)
+#         list_ofnames.append(4)
+#         list_ofnames.append(5)
+#         print(list_ofnames)
+#     else:
+#         if y in names(6):
+#             print(list_ofnames)
+#             print(names)
+#         return list_ofnames 
+    
+# names = ['Rebecca', 's', 'Bob', 'Dante', 'Monica', 'Brad']
+# namelistfunction(names)
