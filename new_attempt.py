@@ -83,9 +83,22 @@
 # i.	If the ingredient is present, return the string ingredient from the function
 # ii.	If the ingredient is not there, ask the user if they want to search again and restart the operation
 
+# 5.	Write a function that takes in a list of strings, the logic of the function should reverse the order of the values inside the list then return it back as a new list
+# a.	Note: Cannot use list.reverse() for this problem
+# i.	Input: [“Yellow”, “Purple”, “Orange”]
+# ii.	Output: [“Orange”, “Purple”, “Yellow”]
 
 
 
-ingredients = ["salt", "pepper", "mustard", "eggs"]
+listrings = ['Yellow','Purple','Orange']
 
-checking_ingredients(ingredients)
+def my_function(liststrings):
+  for element in listrings:
+    listrings.append(0)
+    listrings.append(1)
+    listrings.append(2)
+    new_string=liststrings
+    print(f'{[new_string[2],new_string[1],new_string[0]]}')
+    return
+
+my_function(listrings)
